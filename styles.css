@@ -1,16 +1,18 @@
+:root {
+  --yellow: #fef606;
+  --brown: #1d1d00;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: radial-gradient(#fef606 20%, #626201);
-  /* background-image: radial-gradient(
-    farthest-corner at 40px 40px,
-    #f35 0%,
-    #43e 100%
-  ); */
+  background: radial-gradient(var(--yellow), var(--brown));
   font-family: "Montserrat", sans-serif;
+  /* without the height, stripes show up on the screen */
   height: 100vh;
+  /* to hide the ugly and for now useless scrollbar */
   overflow: hidden;
 }
 
@@ -22,3 +24,4 @@ p {
   font-weight: 100;
   font-size: 100px;
 }
+
